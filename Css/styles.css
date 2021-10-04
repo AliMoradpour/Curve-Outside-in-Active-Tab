@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu',sans-serif,Arial, Helvetica;
+    font-size: 1.25rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(19, 16, 16);
+}
+
+    /* Navigation */
+.nav{
+    position: relative;
+    height: 500px;
+    width: 70px;
+    overflow-x: hidden;
+    background: #2b343b;
+    box-shadow: 10px 0 0 rgb(75, 14, 14);
+    border-left: 10px solid #2b343b;
+    transition: width .2s;;
+}
+.nav:hover{
+    width: 300px;
+}
+.nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.nav ul li{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nav ul li.active{
+    background: rgb(75, 14, 14);
+}
+.nav ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 rgb(75, 14, 14);
+}
+.nav ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 rgb(75, 14, 14);
+}
+.nav ul li a .icon{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding-left: 10px;
+}
+.nav ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.2rem;
+    z-index: 1;
+}
