@@ -1,5 +1,5 @@
 # Curve-Outside-in-Active-Tab
 just a practice
 
-View the project online :
+Take a look at the project :
 https://creative-scone-ae6e62.netlify.app/#
